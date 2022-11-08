@@ -1,0 +1,67 @@
+@import url("./base.css");
+
+body {
+   background-image: url("../assets/home/background-home-mobile.jpg");
+   background-size: cover;
+   background-repeat: round;
+   padding: 24px;
+}
+
+.heading {
+   text-align: center;
+   font-weight: 400;
+}
+.heading__title {
+   font-size: 80px;
+}
+
+.heading__description {
+   font-size: 15px;
+}
+#explore__button {
+   display: flex;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   margin: 81px auto auto auto;
+   width: 150px;
+   height: 150px;
+   font-size: 20px;
+   border: none;
+   border-radius: 50%;
+   letter-spacing: 1.25px;
+   font-weight: 400;
+   font-family: "Bellefair", sans-serif;
+   background-color: #fff;
+   color: black;
+}
+
+#hover__background {
+   position: absolute;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   scale: 1;
+   transition: all ease 0.3s;
+}
+#hover__background:hover {
+   transition: all ease 0.3s;
+   scale: 1.75;
+   background-color: rgba(158, 158, 158, 0.225);
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media (min-width: 768px) {
+   body {
+      background-image: url("../assets/home/background-home-tablet.jpg");
+   }
+}
+
+@media (min-width: 1024px) {
+   body {
+      background-image: url("../assets/home/background-home-desktop.jpg");
+   }
+}
