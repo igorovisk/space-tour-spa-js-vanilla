@@ -6,7 +6,6 @@ body {
 
 .image__container {
    margin-top: 40px;
-   display: flex;
 }
 .image__container img {
    margin: auto;
@@ -15,6 +14,7 @@ body {
 .slider {
    display: flex;
    gap: 10px;
+   margin-top: 10px;
 }
 .slider a {
    background-color: none;
@@ -36,23 +36,14 @@ body {
 .slider div span:active {
    background-color: red;
 }
-section {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   gap: 20px;
-}
-.section__text__container {
-   margin-bottom: 30px;
-}
-#section__title {
+
+.section__title {
    font-size: 56px;
    text-transform: uppercase;
 }
-#section__description {
+.section__description {
    font-size: 15px;
+   margin-bottom: 30px;
 }
 .footer {
    border-top: 1px solid #383b4b;
@@ -62,10 +53,10 @@ section {
    align-items: center;
    gap: 60px;
    width: 100%;
-   padding: 32px 0px;
+   padding: 61px 0px;
+   margin-top: 40px;
 }
-
-#footer__distance #footer__time {
+.footer p {
    font-family: "Bellefair", sans-serif;
    font-size: 28px;
 }

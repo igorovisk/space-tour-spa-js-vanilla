@@ -8,35 +8,46 @@ body {
 }
 
 .heading {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
    text-align: center;
    font-weight: 400;
+   margin-top: 150px;
 }
 .heading__title {
    font-size: 80px;
 }
 
 .heading__description {
+   line-height: 25px;
    font-size: 15px;
+   color: #d0d6f9;
 }
-#explore__button {
+.explore__button {
    display: flex;
-   text-decoration: none;
    justify-content: center;
    align-items: center;
    margin: 81px auto auto auto;
    width: 150px;
    height: 150px;
-   font-size: 20px;
    border: none;
    border-radius: 50%;
-   letter-spacing: 1.25px;
-   font-weight: 400;
-   font-family: "Bellefair", sans-serif;
    background-color: #fff;
-   color: black;
 }
 
-#hover__background {
+.explore__button p {
+   text-decoration: none;
+   font-size: 20px;
+   letter-spacing: 1.25px;
+   font-weight: 100;
+   font-family: "Bellefair", sans-serif;
+   background-color: #fff;
+   color: #0b0d17;
+   letter-spacing: 1.25px;
+}
+
+.hover__background {
    position: absolute;
    width: 150px;
    height: 150px;
@@ -44,7 +55,7 @@ body {
    scale: 1;
    transition: all ease 0.3s;
 }
-#hover__background:hover {
+.hover__background:hover {
    transition: all ease 0.3s;
    scale: 1.75;
    background-color: rgba(158, 158, 158, 0.225);
