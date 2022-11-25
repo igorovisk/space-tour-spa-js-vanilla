@@ -17,7 +17,7 @@ function destinationLayout() {
       a.textContent = "Link";
       a.addEventListener("click", (ev) => {
          ev.preventDefault();
-         renderDestination(ev.target);
+         renderDestination(ev.target.textContent);
       });
       const sliderSpan = createElement("span");
       sliderDiv.appendChild(a);
