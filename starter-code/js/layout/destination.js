@@ -46,10 +46,12 @@ function destinationLayout() {
    const footerDistance = createElement("p");
    const footerTime = createElement("p");
    footer.classList.add("footer");
+   footerDistance.id = "footerDistance";
+   footerTime.id = "footerTime";
    footer.appendChild(footerDistance);
    footer.appendChild(footerTime);
 
-   footerDistance.textContent = "384,400 KM";
-   footerTime.textContent = "3 DAYS";
+   footerDistance.textContent = "384,400 km";
+   footerTime.textContent = "3 Days";
    main.appendChild(footer);
 }

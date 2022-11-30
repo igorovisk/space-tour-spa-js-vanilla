@@ -5,22 +5,24 @@ async function readJson(filename) {
    return data;
 }
 readJson("destination");
-// readJson("technology");
 
 function storeData(data) {
-   sessionStorage.setItem("destination", data);
-   console.log(sessionStorage.getItem("destination"));
+   sessionStorage.setItem("destination", JSON.stringify(data.destinations));
 }
 
-function readData(data) {}
-
 function renderDestination(destination) {
-   // console.log(destination, "destination");
-   // title.textContent = destination.name;
-   // description.textContent = destination.description;
-   // // destinationImage.src = destination.images.png;
-   // footerDistance.textContent = destination.distance;
-   // footerTime.textContent = destination.travel;
+   const getStorageItem = sessionStorage.getItem("destination");
+
+   const data = JSON.parse(getStorageItem).find((planet) => {
+      return planet.name == destination;
+   });
+   console.log(data, "data");
+   title.textContent = data.name;
+   description.textContent = data.description;
+   console.log(description, "decr");
+   destinationImage.src = data.images.png;
+   footerDistance.textContent = data.distance;
+   footerTime.textContent = data.travel;
 }
 
 // // renderData();
